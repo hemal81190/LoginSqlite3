@@ -14,6 +14,10 @@
 		E7A253E31CCDFA6D007694D9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E7A253E21CCDFA6D007694D9 /* Images.xcassets */; };
 		E7A253E61CCDFA6D007694D9 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E7A253E41CCDFA6D007694D9 /* LaunchScreen.xib */; };
 		E7A253F21CCDFA6E007694D9 /* LoginSqliteTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E7A253F11CCDFA6E007694D9 /* LoginSqliteTests.m */; };
+		E7A253FC1CCDFB00007694D9 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E7A253FB1CCDFB00007694D9 /* libsqlite3.dylib */; };
+		E7A253FF1CCDFC5C007694D9 /* dboperation.m in Sources */ = {isa = PBXBuildFile; fileRef = E7A253FE1CCDFC5C007694D9 /* dboperation.m */; };
+		E7A254021CCE0001007694D9 /* LOGINViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E7A254011CCE0001007694D9 /* LOGINViewController.m */; };
+		E7A254051CCE011E007694D9 /* DetailTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E7A254041CCE011E007694D9 /* DetailTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +44,13 @@
 		E7A253EB1CCDFA6D007694D9 /* LoginSqliteTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LoginSqliteTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7A253F01CCDFA6D007694D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E7A253F11CCDFA6E007694D9 /* LoginSqliteTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginSqliteTests.m; sourceTree = "<group>"; };
+		E7A253FB1CCDFB00007694D9 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		E7A253FD1CCDFC5C007694D9 /* dboperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dboperation.h; sourceTree = "<group>"; };
+		E7A253FE1CCDFC5C007694D9 /* dboperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = dboperation.m; sourceTree = "<group>"; };
+		E7A254001CCE0001007694D9 /* LOGINViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LOGINViewController.h; sourceTree = "<group>"; };
+		E7A254011CCE0001007694D9 /* LOGINViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LOGINViewController.m; sourceTree = "<group>"; };
+		E7A254031CCE011E007694D9 /* DetailTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailTableViewController.h; sourceTree = "<group>"; };
+		E7A254041CCE011E007694D9 /* DetailTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E7A253FC1CCDFB00007694D9 /* libsqlite3.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +75,13 @@
 		E7A253C91CCDFA6D007694D9 = {
 			isa = PBXGroup;
 			children = (
+				E7A254031CCE011E007694D9 /* DetailTableViewController.h */,
+				E7A254041CCE011E007694D9 /* DetailTableViewController.m */,
+				E7A254001CCE0001007694D9 /* LOGINViewController.h */,
+				E7A254011CCE0001007694D9 /* LOGINViewController.m */,
+				E7A253FD1CCDFC5C007694D9 /* dboperation.h */,
+				E7A253FE1CCDFC5C007694D9 /* dboperation.m */,
+				E7A253FB1CCDFB00007694D9 /* libsqlite3.dylib */,
 				E7A253D41CCDFA6D007694D9 /* LoginSqlite */,
 				E7A253EE1CCDFA6D007694D9 /* LoginSqliteTests */,
 				E7A253D31CCDFA6D007694D9 /* Products */,
@@ -219,9 +238,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E7A254051CCE011E007694D9 /* DetailTableViewController.m in Sources */,
 				E7A253DE1CCDFA6D007694D9 /* ViewController.m in Sources */,
 				E7A253DB1CCDFA6D007694D9 /* AppDelegate.m in Sources */,
 				E7A253D81CCDFA6D007694D9 /* main.m in Sources */,
+				E7A253FF1CCDFC5C007694D9 /* dboperation.m in Sources */,
+				E7A254021CCE0001007694D9 /* LOGINViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

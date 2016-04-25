@@ -7,9 +7,17 @@
 //
 
 #import <UIKit/UIKit.h>
-
-@interface ViewController : UIViewController
-
+#import "dboperation.h"
+@interface ViewController : UIViewController<UIAlertViewDelegate>
+{
+    dboperation *dbop;
+}
+@property (weak, nonatomic) IBOutlet UITextField *txt_nm;
+@property (weak, nonatomic) IBOutlet UITextField *txt_pass;
+@property (weak, nonatomic) IBOutlet UITextField *txt_ph;
+@property (weak, nonatomic) IBOutlet UITextField *txt_email;
+@property (weak, nonatomic) IBOutlet UITextField *txt_addr;
+- (IBAction)btn_action:(id)sender;
 
 @end
 
